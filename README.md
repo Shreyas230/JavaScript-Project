@@ -1,2 +1,2 @@
-# JavaScript-Project
-Javascript Project Creation
+# JavaScript-
+Grocery Shopping with shopping cart functionality
