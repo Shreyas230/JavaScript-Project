@@ -12,7 +12,8 @@ document.addEventListener('DOMContentLoaded', function() {
         { id: 5, name: 'Strawberries', price: 3.00, image: 'strawberries.jpg' },
         { id: 6, name: 'Watermelon', price: 4.50, image: 'watermelon.jpg' },
         { id: 10, name: 'Kellogs Cornflakes', price: 0.75, image: 'kellogs.jpg' },
-        { id: 11, name: 'Cookies', price: 0.80, image: 'cookies.jpg' } 
+        { id: 11, name: 'Cookies', price: 0.80, image: 'cookies.jpg' } ,
+        { id: 12,name:  'Beans' ,price:5.00,image:'beans.jpg'}
     ];
 
     // Display products
