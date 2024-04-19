@@ -116,6 +116,14 @@ header .icons img {
 
 .cart-item {
     margin-bottom: 5px;
+    text-align:center;
+}
+.shopping-cart{
+    background-color:#4CAF50;
+    padding:20px;
+    border-radius:10px;
+    margin-top: 20px;
+    text-align:center;
 }
 
 
