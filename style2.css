@@ -119,6 +119,8 @@ header .icons img {
 
 .cartextra{
     text-align:center;
+    color:#fefefe;
+    font-size:30px;
 }
 
 .cart-item {
@@ -127,11 +129,12 @@ header .icons img {
 }
 
 .features2{
-    background-color:#4CAF50;
+    background-color:#2e2e2e;
     padding:20px;
     border-radius:10px;
     margin-top: 20px;
     text-align:center;
+    color:#fefefe;
 }
 
 .container2{
