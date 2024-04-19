@@ -1,18 +1,18 @@
 document.addEventListener('DOMContentLoaded', function() {
     const productsContainer = document.querySelector('.products-container');
-    const cart = document.querySelector('.cart-items');
+    const cart = document.querySelector('.cart-items'); // Changed from '.cart' to '.cart-items'
     const totalSpan = document.getElementById('total');
 
     // Sample product data
     const products = [
-        { id: 1, name: 'Apple', price: 1.00, image: 'apple.jpg' },
+        { id: 1, name: 'Apple', price: 1.00, image: "apple.jpg" },
         { id: 2, name: 'Banana', price: 0.50, image: 'banana.jpg' },
         { id: 3, name: 'Orange', price: 0.75, image: 'orange.jpg' },
         { id: 4, name: 'Grapes', price: 2.50, image: 'grapes.jpg' },
         { id: 5, name: 'Strawberries', price: 3.00, image: 'strawberries.jpg' },
         { id: 6, name: 'Watermelon', price: 4.50, image: 'watermelon.jpg' },
-        { id: 7, name: 'Kellogs Cornflakes', price: 0.75, image: 'kellogs.jpg' },
-        { id: 8, name: 'Cookies', price: 0.8, image: 'cookies.jpg' }
+        { id: 10, name: 'Kellogs Cornflakes', price: 0.75, image: 'kellogs.jpg' },
+        { id: 11, name: 'Cookies', price: 0.80, image: 'cookies.jpg' } 
     ];
 
     // Display products
@@ -67,12 +67,5 @@ document.addEventListener('DOMContentLoaded', function() {
     checkoutBtn.addEventListener('click', function() {
         alert(`Total amount: $${totalSpan.textContent}`);
         // Implement further actions here (e.g., payment processing)
-    });
-
-    // Cart icon click
-    const cartIcon = document.querySelector('.cart-icon');
-    cartIcon.addEventListener('click', function() {
-        // Show/hide cart items
-        cart.classList.toggle('show');
     });
 });
