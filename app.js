@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const productsContainer = document.querySelector('.products-container');
-    const cart = document.querySelector('.cart-items'); // Changed from '.cart' to '.cart-items'
+    const cart = document.querySelector('.cart-items');
     const totalSpan = document.getElementById('total');
 
     // Sample product data
@@ -12,8 +12,8 @@ document.addEventListener('DOMContentLoaded', function() {
         { id: 5, name: 'Strawberries', price: 3.00, image: 'strawberries.jpg' },
         { id: 6, name: 'Watermelon', price: 4.50, image: 'watermelon.jpg' },
         { id: 10, name: 'Kellogs Cornflakes', price: 0.75, image: 'kellogs.jpg' },
-        { id: 11, name: 'Cookies', price: 0.80, image: 'cookies.jpg' } ,
-        { id: 12,name:  'Beans' ,price:5.00,image:'beans.jpg'}
+        { id: 11, name: 'Cookies', price: 0.80, image: 'cookies.jpg' },
+        { id: 12, name:  'Beans', price: 5.00, image: 'beans.jpg' }
     ];
 
     // Display products
@@ -45,11 +45,19 @@ document.addEventListener('DOMContentLoaded', function() {
         cartItem.innerHTML = `
             <span>${product.name}</span>
             <span>$${product.price.toFixed(2)}</span>
+            <button class="remove-from-cart-btn">Remove</button>
         `;
         cart.appendChild(cartItem);
 
         // Update total
         updateTotal();
+
+        // Add event listener to remove button
+        const removeButton = cartItem.querySelector('.remove-from-cart-btn');
+        removeButton.addEventListener('click', function() {
+            cart.removeChild(cartItem); // Remove the cart item from the DOM
+            updateTotal(); // Update the total cost after removing the item
+        });
     }
 
     // Update total cost
