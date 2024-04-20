@@ -23,6 +23,11 @@ header .container {
 
 header .logo img {
     height: 50px;
+    transition: transform 0.3s ease; /* Adding transition for smooth animation */
+}
+
+header .logo img:hover {
+    transform: scale(1.1); /* Scale up image on hover */
 }
 
 header nav ul {
@@ -40,11 +45,22 @@ header nav ul li a {
     color:black;
     text-decoration: none;
     font-size: 20px;
+    transition: transform 0.3s ease; /* Adding transition for smooth animation */
+}
+
+header nav ul li a:hover {
+    color: #ffffff; /* Change color on hover */
+    transform: scale(1.1); /* Scale up link on hover */
 }
 
 header .icons img {
     height: 30px;
     margin-left: 10px;
+    transition: transform 0.3s ease; /* Adding transition for smooth animation */
+}
+
+header .icons img:hover {
+    transform: scale(1.1); /* Scale up icon on hover */
 }
 
 .hero {
@@ -67,6 +83,12 @@ header .icons img {
     border: none;
     color: #fff;
     cursor: pointer;
+    transition: transform 0.3s ease; /* Adding transition for smooth animation */
+}
+
+.hero button:hover {
+    background-color: #45a049; /* Darken button on hover */
+    transform: scale(1.1); /* Scale up button on hover */
 }
 
 .features {
@@ -92,6 +114,11 @@ header .icons img {
     width: 200px;
     margin: 20px;
     text-align: center;
+    transition: transform 0.3s ease; /* Adding transition for smooth animation */
+}
+
+.product:hover {
+    transform: scale(1.1); /* Scale up product on hover */
 }
 
 .product img {
@@ -115,6 +142,12 @@ header .icons img {
     border: none;
     color: #fff;
     cursor: pointer;
+    transition: transform 0.3s ease; 
+}
+
+.add-to-cart-btn:hover {
+    background-color: #45a049; 
+    transform: scale(1.1); 
 }
 
 .cartextra{
@@ -143,4 +176,3 @@ header .icons img {
     padding: 0 20px;
     color:#fefefe;
 }
-
