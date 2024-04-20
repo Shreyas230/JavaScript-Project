@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    background-color:#2a77f1;
+    background-color:#2d42a6;
     padding: 10px 0;
 }
 
@@ -56,7 +56,7 @@ header nav ul li a:hover {
 header .icons img {
     height: 30px;
     margin-left: 10px;
-    transition: transform 0.3s ease; /* Adding transition for smooth animation */
+    transition: transform 0.3s ease; 
 }
 
 header .icons img:hover {
@@ -118,7 +118,7 @@ header .icons img:hover {
 }
 
 .product:hover {
-    transform: scale(1.1); /* Scale up product on hover */
+    transform: scale(1.1); 
 }
 
 .product img {
@@ -142,12 +142,12 @@ header .icons img:hover {
     border: none;
     color: #fff;
     cursor: pointer;
-    transition: transform 0.3s ease; 
+    transition: transform 0.3s ease; /* Adding transition for smooth animation */
 }
 
 .add-to-cart-btn:hover {
-    background-color: #45a049; 
-    transform: scale(1.1); 
+    background-color: #45a049; /* Darken button on hover */
+    transform: scale(1.1); /* Scale up button on hover */
 }
 
 .cartextra{
@@ -175,4 +175,7 @@ header .icons img:hover {
     margin: 0 auto;
     padding: 0 20px;
     color:#fefefe;
+}
+.checkout{
+    background-color: #45a049;
 }
